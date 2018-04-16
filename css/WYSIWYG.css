@@ -145,6 +145,15 @@ ul.soc-icons li a:hover i { color: #000;
     -o-animation: spinHorizontal .5s linear;    
     -webkit-animation: spinHorizontal .5s linear;
     animation: spinHorizontal .5s linear; }
+ul.soc-icons li a:hover i.fa-facebook{
+    color:#3B5998;
+}
+ul.soc-icons li a:hover i.fa-twitter{
+    color:#55acee;
+}
+ul.soc-icons li a:hover i.fa-instagram{
+    color:#e95950;
+}
 @-webkit-keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }
 @-mox-keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }
 @-o-keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }

@@ -1,21 +1,21 @@
 {
-  "name": "photorama",
+  "name": "Arya",
   "version": "1.0.0",
-  "description": "Theme by [Start Bootstrap](http://startbootstrap.com/).",
+  "description": "",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sunbliss/photorama.git"
+    "url": ""
   },
-  "author": "Anna Prigkipaki",
+  "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/sunbliss/photorama/issues"
+    "url": ""
   },
-  "homepage": "http://sunbliss.github.io",
+  "homepage": "",
   "dependencies": {
     "searchkit": "^0.7.0"
   }

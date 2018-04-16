@@ -7,17 +7,13 @@ baseurl: "/araya"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
 share: false
 
 # Owner/author information
 owner:
   name:   araya
   avatar: avatar.png
-  favicon: favicon.ico
+  favicon: favicon1.ico
   info: photography website template
 
 # Settings for comments helper
