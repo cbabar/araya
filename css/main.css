@@ -54,6 +54,10 @@ hr.small {
   left: 0;
   width: 100%;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 26%, rgba(0,0,0,0.65) 35%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%); 
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 26%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 97%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 26%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 97%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -61,14 +65,13 @@ hr.small {
 .navbar-custom .nav li a {
   color: white;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 1px;
+  text-shadow: none;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
-    border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
     color: white;
@@ -83,7 +86,7 @@ hr.small {
     padding: 20px;
   }
   .navbar-custom .nav li a:hover{
-    color: #0085a1;
+    color: #6ec54d;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -99,6 +102,10 @@ hr.small {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 26%, rgba(0,0,0,0.65) 35%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%); 
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 26%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 97%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 26%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 97%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
   }
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
@@ -405,4 +412,28 @@ body {
 .fa-stack-2x {
  color: black;
 }
-
+/*Custom Css Goes Here*/
+.hide{
+  display: none;
+}
+.mailing-list-wrapper{
+  display: none;
+}
+.has-error input[type="text"], .has-error input[type="email"], .has-error select {
+  border: 1px solid #a94442;
+}
+.contact-us-wrapper .contact-us-form{
+  font-size: 14px;
+}
+.contact-us-form .contact-us-button{
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.help-block.error {
+  margin-bottom: 5px;
+  color: red;
+}
+.messages{
+  padding: 0;
+}
