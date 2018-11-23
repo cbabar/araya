@@ -1,12 +1,12 @@
 # Site settings
-title: araya
+title: Araya Ambekar
 email: ""
 description: ""
 url: "http://localhost:3000"
 baseurl: ""
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
+facebook_username: "Aaryaambekarofficialpage"
+twitter_usernames: ""
+instagram_username: "ambekaraarya"
 share: false
 
 # Owner/author information
@@ -14,7 +14,7 @@ owner:
   name:   araya
   avatar: avatar.png
   favicon: favicon1.ico
-  info: photography website template
+  info: Actor | Singer | Beautiful soul 
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)

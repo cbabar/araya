@@ -437,3 +437,7 @@ body {
 .messages{
   padding: 0;
 }
+/*Gallery Page Css*/
+.page-heading{
+  margin-bottom: 40px;
+}
