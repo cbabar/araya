@@ -1,4 +1,2 @@
-1. Completed the Journals Pages.
-2. Remove the unwanted erros.
-3. Complete the menus from the Mobile Page.
-4. Deploy & Commit || Git Clean & Push & Commit
+1. Add Journals Page
+2. Add Google Analyatics to Each Page
