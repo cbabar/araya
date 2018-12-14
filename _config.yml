@@ -1,12 +1,12 @@
 # Site settings
-title: araya
+title: Araya Ambekar
 email: ""
 description: ""
-url: "https://chaitanyab-devops.github.io"
-baseurl: "/araya"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
+url: "http://localhost:3000"
+baseurl: ""
+facebook_username: "Aaryaambekarofficialpage"
+twitter_usernames: ""
+instagram_username: "ambekaraarya"
 share: false
 
 # Owner/author information
@@ -14,7 +14,7 @@ owner:
   name:   araya
   avatar: avatar.png
   favicon: favicon1.ico
-  info: photography website template
+  info: Actor | Singer | Beautiful soul 
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
@@ -29,9 +29,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://chaitanyab-devops.github.io/araya/gallery/"  
-  - JOURNAL: "https://chaitanyab-devops.github.io/araya/journal/"
-  - ABOUT: "https://chaitanyab-devops.github.io/araya/about/"
+  - HOME: "http://localhost:3000"
+  - GALLERY: "http://localhost:3000/gallery/"
+  - CONTACT: "http://localhost:3000/contact/"
 
 # All translation keys
 translations:
@@ -40,7 +40,7 @@ translations:
 
 # Server
 destination:      	 ./_site
-port:             	 4000
+port:             	 3000
 
 # analytics
 ## google analytics
@@ -56,7 +56,7 @@ paginate_path: "/journal/page:num/"
 permalink: "/journal/:title/"
 categories_path: "/journal/category/"
 tags_path: "/journal/tag/"
-gems: 
+plugins: 
  - jekyll-paginate
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
