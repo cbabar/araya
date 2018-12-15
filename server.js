@@ -61,7 +61,7 @@ app.post('/contact', function(req, res) {
 	req.body.subject = req.body.subject === '' ? 'Request Enquiry | Site' : req.body.subject;
 	let mailOptions = {
 		from: 'noreply@ambekararays@gmail.com', // sender address
-		to: 'crb1991@gmail.com', // list of receivers i.e. Would be Changed to the address that is required to be used,
+		to: 'ambekar.aaryas@gmail.com', // list of receivers i.e. Would be Changed to the address that is required to be used,
 		subject: req.body.subject, // Subject line
 		text: 'New Request', // plain text body
 		html: outPut // html body
