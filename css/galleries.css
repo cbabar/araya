@@ -3,7 +3,7 @@
 .gallery::after { content:""; display: block; clear: both; }
 .gallery-item { position: relative; display: block; width: auto; }
 .gallery-icon { position: relative; z-index: 9;  -webkit-transition: opacity .2s ease; -moz-transition: opacity .2s ease; -ms-transition: opacity .2s ease; -o-transition: opacity .2s ease; transition: opacity .2s ease; }
-.gallery-icon a { display: block; width: 100%; height: 100%; position: relative; z-index: 9; }
+.gallery-icon a , .gallery-icon video{ display: block; width: 100%; height: 100%; position: relative; z-index: 9; }
 .gallery-icon img { max-width: 100%; height: auto; margin: 0px; }
 .gallery-caption { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; z-index: 10; pointer-events: none; }
 .gallery-caption .entry-summary { display: inline-block; position: absolute; width: 100%; bottom: 0; color: #F7F6F5; opacity: 0;

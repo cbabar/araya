@@ -1,0 +1,113 @@
+---
+layout: page
+title: "Songs"
+description: "Some Songs"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+album-title: "Some Random Songs :)"
+images:
+ - video_path: https://instagram.fnag4-1.fna.fbcdn.net/v/t50.2886-16/51696971_146064679651161_1051461062676709376_n.mp4?_nc_ht=instagram.fnag4-1.fna.fbcdn.net&amp;_nc_cat=109&amp;_nc_ohc=kffZgV42Jw0AX8NfFFc&amp;oe=5E0E7A9C&amp;oh=0bd1a5cecb65863257b019aee26c1fb4
+   type: video
+   caption: 
+   copyright:
+ - video_path: https://instagram.fnag4-1.fna.fbcdn.net/v/t50.2886-16/47337206_265367667669696_5936872867365912576_n.mp4?_nc_ht=instagram.fnag4-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=aLGrFdJ30agAX83zSYM&oe=5E0E82EE&oh=cd426dfb38e0e4b05f156066a96d7a5c
+   type: video
+   caption: 
+   copyright:    
+ - video_path: https://instagram.fnag4-1.fna.fbcdn.net/v/t50.2886-16/61461542_369602687014336_6843458137618382848_n.mp4?_nc_ht=instagram.fnag4-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=9gR80PncRaYAX-nBaN2&oe=5E0D7078&oh=6f25f2935b9ad5c7020e10b496f44bea
+   type: video
+   caption: 
+   copyright: 
+ - video_path: https://instagram.fnag4-1.fna.fbcdn.net/v/t50.16885-16/10000000_523083351833732_3400878579315884619_n.mp4?_nc_ht=instagram.fnag4-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=eXfjjmELsscAX8PTOk0&oe=5E0DAF16&oh=704f7b2fde8b7b7e5e8b12aa9648e152
+   type: video
+   caption: 
+   copyright:  
+ - video_path: https://instagram.fnag4-1.fna.fbcdn.net/v/t50.16885-16/10000000_2503831139844945_3263995862645651228_n.mp4?_nc_ht=instagram.fnag4-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=OryLbTfgkUgAX_Lne5I&oe=5E0D9FD1&oh=15537a778dded7a376280e434bb349ba
+   type: video
+   caption: 
+   copyright:       
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2 class="page-heading">{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+		{% if image.type == "video" %}
+			<figure class="gallery-item">
+				<header class='gallery-icon'>
+
+				<video  controls class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+					<source src="{{image.video_path}}" type="video/mp4">
+				</video>
+					
+				</header>	
+				<figcaption class='gallery-caption'>
+					<div class="entry-summary" id="{{ image.caption }}">
+					<h6>{{image.caption}}</h6>
+					</div>
+				</figcaption>
+			</figure>
+		{% endif %}
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    
+</body></html>
